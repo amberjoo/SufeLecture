@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 1 Part Header -->
+
+    <RelativeLayout
+        android:id="@+id/alertHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_header1_bg" >
+
+        <Button
+            android:id="@+id/btn_alert_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_menu_back" />
+
+        <Button
+            android:id="@+id/btn_alert_set"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/select_login_page"
+            android:text="确定"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <!-- 2 Part Content -->
+
+    <RelativeLayout
+        android:id="@+id/alert_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/alertHeader"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_alert_lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:text="讲座名称" />
+
+        <TextView
+            android:id="@+id/tv_alert_lname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/tv_alert_lname"
+            android:text="财大舞鞋表演" />
+
+        <TextView
+            android:id="@+id/tv_alert_ltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_alert_lname"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="讲座日期" />
+
+        <TextView
+            android:id="@+id/tv_alert_ltime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_alert_ltime"
+            android:layout_alignLeft="@id/tv_alert_lname2"
+            android:text="2014-05-05 14:16:00" />
+
+        <TextView
+            android:id="@+id/tv_alert_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_alert_ltime"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="提醒日期" />
+
+        <TextView
+            android:id="@+id/tv_alert_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_alert_date"
+            android:layout_alignLeft="@id/tv_alert_lname2"
+            android:text="2014-05-05" />
+
+        <TextView
+            android:id="@+id/tv_alert_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_alert_date"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="提醒时间" />
+
+        <TextView
+            android:id="@+id/tv_current_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_alert_time"
+            android:layout_alignLeft="@id/tv_alert_lname2"
+            android:text="14:16" />
+
+        <Button
+            android:id="@+id/btn_alert_setting"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_alert_time"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/select_login_select"
+            android:text="设置提醒日期"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_alert_dsetting"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/btn_alert_setting"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/select_login_select"
+            android:text="设置提醒时间"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_alert_cancel"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_alert_setting"
+            android:layout_alignRight="@+id/btn_alert_dsetting"
+            android:layout_below="@+id/btn_alert_dsetting"
+            android:layout_marginTop="10dp"
+           android:background="@drawable/select_alert_cancel"
+            android:text="取消提醒"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

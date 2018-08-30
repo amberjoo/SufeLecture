@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 1 part  Header -->
+
+    <RelativeLayout
+        android:id="@+id/infoHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_header1_bg" >
+
+        <Button
+            android:id="@+id/btn_info_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_logo2" />
+
+        <Button
+            android:id="@+id/btn_info_comment"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/select_login_page"
+            android:text="我要留言"
+            android:textColor="@color/black"
+             />
+    </RelativeLayout>
+
+    <!-- 2 part Info -->
+
+    <RelativeLayout
+        android:id="@+id/infoLecture"
+        android:layout_width="fill_parent"
+        android:layout_height="190dp"
+        android:layout_below="@id/infoHeader"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/img_info_poster"
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_info_poster" />
+
+        <TextView
+            android:id="@+id/tv_info_lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_info_poster"
+            android:layout_toRightOf="@id/img_info_poster"
+            android:text="论学习安卓的艰难困苦和苦去甘来"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_info_lector1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_info_lname"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/tv_info_lname"
+            android:layout_marginTop="8dp"
+            android:text="主讲人"
+            android:textColor="@color/dark_gray"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_info_lector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_info_lector1"
+            android:layout_below="@id/tv_info_lector1"
+            android:text="大神大神大神大神大神大神大神大神大神大神大神"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_info_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_info_lector1"
+            android:layout_below="@id/tv_info_lector"
+            android:layout_marginTop="5dp"
+            android:text="时间"
+            android:textColor="@color/dark_gray"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_info_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_info_lector1"
+            android:layout_below="@id/tv_info_time1"
+            android:text="2014年5月2日"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_info_place1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_info_lector1"
+            android:layout_below="@id/tv_info_time"
+            android:layout_marginTop="5dp"
+            android:text="地点"
+            android:textColor="@color/dark_gray"
+            android:textSize="10dp" />
+        <TextView
+            android:id="@+id/tv_info_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_info_lector1"
+            android:layout_below="@id/tv_info_place1"
+            android:text="白楼3楼白楼3楼白楼3楼白楼3楼白楼3楼白楼3楼白楼3楼"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <!-- 3 part  Button -->
+
+    <LinearLayout
+        android:id="@+id/BtnMark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoLecture"
+        android:background="@color/light_gray" >
+
+        <Button
+            android:id="@+id/btn_info_participate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/select_header2_btn"
+            android:text="我要参加"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_info_placeholder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/select_header2_btn"
+            android:text="我要抢位"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_info_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/BtnMark"
+        android:background="@color/guider_green" />
+
+    <RelativeLayout
+        android:id="@+id/wrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_info_line"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_info_parbox"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_join_bg"
+            android:paddingLeft="15dp"
+            android:paddingTop="18dp"
+            android:text="朱宁娟， 王超， 张丹宁"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_info_placebox"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_join_bg2"
+            android:paddingLeft="15dp"
+            android:paddingTop="18dp"
+            android:text="朱宁娟， 王超， 张丹宁"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- 4 part comments -->
+
+    <RelativeLayout
+        android:id="@+id/commentsDtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wrap"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
+        <ListView
+            android:id="@+id/lv_info_comdetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

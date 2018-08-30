@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_header2_bg"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/tv_today_forum"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/select_header2_btn"
+        android:padding="10dp"
+        android:text="今日讲座"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/tv_all_forum"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/select_header2_btn"
+        android:padding="10dp"
+        android:paddingLeft="20dp"
+        android:text="所有讲座"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/tv_mine_forum"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/select_header2_btn"
+        android:padding="10dp"
+        android:text="我的讲座"
+        android:textSize="18sp" />
+
+</LinearLayout>

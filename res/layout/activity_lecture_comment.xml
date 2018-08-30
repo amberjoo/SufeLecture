@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Part 1 Header -->
+
+    <RelativeLayout
+        android:id="@+id/commenthHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_header1_bg" >
+
+        <Button
+            android:id="@+id/btn_comment_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_menu_back" />
+
+        <Button
+            android:id="@+id/btn_comment_set"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/select_login_page"
+            android:text="提交留言"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <!-- 2 Part Text -->
+
+    <RelativeLayout
+        android:id="@+id/commentText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" >
+
+        <EditText
+            android:id="@+id/edt_comment_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="写评价/写留言" />
+    </RelativeLayout>
+
+</LinearLayout>

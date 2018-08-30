@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true" >
+
+    <ImageView
+        android:id="@+id/img_title_one"
+        android:layout_width="75dp"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_poster" />
+
+    <TextView
+        android:id="@+id/tv_forum_breif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/img_title_one"
+        android:text="讲座名称要足够长才可以好好测试啊哈哈哈"
+        android:textSize="15sp" />
+
+</RelativeLayout>

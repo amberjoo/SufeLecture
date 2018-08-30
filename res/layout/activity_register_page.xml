@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login2_Root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/guider_green"
+    android:orientation="vertical" >
+
+    <!-- 第一部分 Header -->
+
+    <RelativeLayout
+        android:id="@+id/rgHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_header1_bg" >
+
+        <Button
+            android:id="@+id/btn_back_rg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_menu_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_header_rg"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/select_login_page"
+            android:text="@string/register"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <!-- 第二部分 输入框 -->
+
+    <RelativeLayout
+        android:id="@+id/rgView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgHeader"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp" >
+
+        <EditText
+            android:id="@+id/edt_rgview_pho"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_logview_bg"
+            android:hint="@string/pho_note"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="40dp"
+            android:saveEnabled="true" />
+
+        <ImageView
+            android:id="@+id/img_rgview_pho"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/edt_rgview_pho"
+            android:layout_alignLeft="@id/edt_rgview_pho"
+            android:layout_alignTop="@id/edt_rgview_pho"
+            android:background="@drawable/ic_rgview_pho" />
+
+        <EditText
+            android:id="@+id/edt_rgview_eml"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/edt_rgview_pho"
+            android:background="@drawable/ic_logview_bg3"
+            android:hint="请输入常用邮箱"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="40dp"
+            android:saveEnabled="true" />
+
+        <ImageView
+            android:id="@+id/img_rgview_eml"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/edt_rgview_eml"
+            android:layout_alignLeft="@id/edt_rgview_eml"
+            android:layout_alignTop="@id/edt_rgview_eml"
+            android:background="@drawable/ic_rgview_eml" />
+
+        <EditText
+            android:id="@+id/edt_rgview_rpwd"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/edt_rgview_eml"
+            android:background="@drawable/ic_logview_bg3"
+            android:hint="请您输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="40dp"
+            android:saveEnabled="true" />
+
+        <ImageView
+            android:id="@+id/img_rgview_rpwd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/edt_rgview_rpwd"
+            android:layout_alignLeft="@id/edt_rgview_rpwd"
+            android:layout_alignTop="@id/edt_rgview_rpwd"
+            android:background="@drawable/ic_rgview_rpwd" />
+
+        <EditText
+            android:id="@+id/edt_rgview_rrpwd"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/edt_rgview_rpwd"
+            android:background="@drawable/ic_logview_bg2"
+            android:hint="请您确认密码"
+            android:inputType="textPassword"
+            android:paddingLeft="40dp"
+            android:saveEnabled="true" />
+
+        <ImageView
+            android:id="@+id/img_rgview_rrpwd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/edt_rgview_rrpwd"
+            android:layout_alignLeft="@id/edt_rgview_rrpwd"
+            android:layout_alignTop="@id/edt_rgview_rrpwd"
+            android:background="@drawable/ic_rgview_rrpwd" />
+
+        <Button
+            android:id="@+id/img_rgview_ccl"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@id/edt_rgview_pho"
+            android:layout_alignTop="@id/edt_rgview_pho"
+            android:background="@drawable/ic_view_cancel"
+            android:gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/img_rgview_ccl2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@id/edt_rgview_eml"
+            android:layout_alignTop="@id/edt_rgview_eml"
+            android:background="@drawable/ic_view_cancel"
+            android:gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/img_rgview_ccl3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@id/edt_rgview_rpwd"
+            android:layout_alignTop="@id/edt_rgview_rpwd"
+            android:background="@drawable/ic_view_cancel"
+            android:gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/img_rgview_ccl4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@id/edt_rgview_rrpwd"
+            android:layout_alignTop="@id/edt_rgview_rrpwd"
+            android:background="@drawable/ic_view_cancel"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <!-- 第三部分  输入框 -->
+
+    <RelativeLayout
+        android:id="@+id/rgView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgView1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <EditText
+            android:id="@+id/edt_rgview_acc"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_logview_bg"
+            android:hint="@string/acc_note"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="40dp"
+            android:saveEnabled="true" />
+
+        <ImageView
+            android:id="@+id/img_rgview_acc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/edt_rgview_acc"
+            android:layout_alignLeft="@id/edt_rgview_acc"
+            android:layout_alignTop="@id/edt_rgview_acc"
+            android:background="@drawable/ic_view_acc" />
+
+        <EditText
+            android:id="@+id/edt_rgview_name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/edt_rgview_acc"
+            android:background="@drawable/ic_logview_bg3"
+            android:hint="请输入真实姓名"
+            android:maxLength="10"
+            android:paddingLeft="40dp"
+            android:saveEnabled="true" />
+
+        <ImageView
+            android:id="@+id/img_rgview_name"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/edt_rgview_name"
+            android:layout_alignLeft="@id/edt_rgview_name"
+            android:layout_alignTop="@id/edt_rgview_name"
+            android:background="@drawable/ic_rgview_name" />
+
+        <Button
+            android:id="@+id/img_rgview_ccl5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@id/edt_rgview_acc"
+            android:layout_alignTop="@id/edt_rgview_acc"
+            android:background="@drawable/ic_view_cancel"
+            android:gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/img_rgview_ccl6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@id/edt_rgview_name"
+            android:layout_alignTop="@id/edt_rgview_name"
+            android:background="@drawable/ic_view_cancel"
+            android:gravity="center_vertical" />
+
+        <RelativeLayout
+            android:id="@+id/sprview1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/edt_rgview_name"
+            android:background="@drawable/ic_logview_bg3">
+
+            <Spinner
+                android:id="@+id/spr_rgview_scl"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                     android:layout_centerVertical="true"
+                android:background="@drawable/select_register_spr"
+                />
+
+            <ImageView
+                android:id="@+id/img_rgview_scl"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/spr_rgview_scl"
+                android:background="@drawable/ic_rgview_scl"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/sprview1"
+            android:background="@drawable/ic_logview_bg2"
+            >
+
+            <Spinner
+                android:id="@+id/spr_rgview_mar"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/select_register_spr"
+                />
+
+            <ImageView
+                android:id="@+id/img_rgview_mar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_rgview_mar"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/successView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20.0px"
+        android:layout_marginLeft="15.0px"
+        android:layout_marginRight="15.0px"
+        android:background="@drawable/img_rgview_bg"
+        android:paddingBottom="10.0px"
+        android:paddingTop="21.0px"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_success_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ff3f3f3f"
+            android:textSize="20.0dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

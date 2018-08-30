@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cmtItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:paddingBottom="10dp"
+    >
+
+    <ImageView 
+        android:id="@+id/img_comment_photo"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_forum"/>
+    <TextView
+        android:id="@+id/tv_comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_alignTop="@id/img_comment_photo"
+        android:text="朱宁娟"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_comment_name"
+        android:layout_alignLeft="@id/tv_comment_name"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="1dp"
+        android:text="2014-05-13 24:20:12"
+        android:textColor="@color/dark_gray"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_comment_breif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_comment_photo"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignLeft="@id/tv_comment_name"
+        android:gravity="center_vertical|bottom"
+        android:text="评论内容也要长评论内容也要长评论内容也要长评论内容也要长评论内容也要长评论内容也要长评论内容也要长评论内容也要长" 
+        android:textSize="15sp"/>
+
+</RelativeLayout>

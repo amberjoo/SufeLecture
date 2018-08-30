@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true" >
+
+    <TextView
+        android:id="@+id/tv_forum_breif"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="10dp"
+        android:text="讲座名称足够长以便于测试啊呀呀呀呀加油加油加油"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="2014-13-13 24:20:12"
+        android:textColor="@color/dark_gray" />
+
+    <Button
+        android:id="@+id/btn_tip"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_time"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/guider_green"
+        android:text="提醒"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/tv_time"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/btn_tip"
+        android:background="@color/red"
+        android:text="放弃参加"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+</RelativeLayout>

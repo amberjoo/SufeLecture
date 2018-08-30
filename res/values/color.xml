@@ -1,0 +1,38 @@
+<resources>
+
+    <color name="toumingcolor">#ffffff</color>
+    <color name="linecolor">#c1c1c1</color>
+    <color name="red">#e65543</color>
+    <color name="guidebackground">#f4efea</color>
+    <color name="transparent">#00000000</color>
+    <color name="gold">#b89766</color>
+    <color name="grey21">#363636</color>
+    <color name="gray">#7f8c8d</color>
+    <color name="button_prs">#8f98a0</color>
+    <color name="item_presss">#dcdcdc</color> 
+    <color name="blue">#324f85</color>
+    <color name="title">#14b9d5</color>
+    <color name="gray_bg">#d9d8d8</color>
+    <color name="tagColor">#959595</color>
+    <color name="contentColor">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="fontColor">#999999</color>
+    <color name="pressColor">#f2f2f2</color>
+    <color name="pressed">#f6f6f6</color>
+    <color name="text_color">#cccccc</color>
+    <color name="phone_blue">#33b5e5</color>
+    <color name="progressbar_red">#e75543</color>
+    <color name="progressbar_gray">#ebedef</color>
+    <color name="green"> #00CC99</color>
+    <color name="ncd_title">#ebe9dd</color>
+    <color name="black">#000000</color>
+    <color name="option_press">#618bd5b7</color>
+ 	<color name="skyblue">#14b9d5</color>
+ 	
+ 	<color name="light_gray">#bdc3c7</color>
+ 	<color name="dark_gray">#808080</color>
+ 	<color name="light0_gray">#e4ebf0</color>
+ 	
+ 	<color name="guider_green">#1fbba6</color>
+ 	<color name="light_yellow">#f5e478</color>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rl_content"
+        android:layout_width="250dp"
+        android:layout_height="33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_headerview_allbg" >
+
+        <Button
+            android:id="@+id/btn_recent"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_h2_all_after"
+            android:gravity="center_vertical|center" />
+
+        <Button
+            android:id="@+id/btn_past"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_h2_all_before"
+            android:gravity="center_vertical|center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="480dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/rl_content"
+        android:background="@drawable/ic_headerview_yinying" />
+
+    <ListView
+        android:id="@+id/lv_all_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_line"
+        android:listSelector="@color/gray" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rl_content"
+        android:layout_width="280dp"
+        android:layout_height="33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_headerview_todaybg" >
+
+        <Button
+            android:id="@+id/btn_all"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_h2_today_all"
+            android:gravity="center_vertical|center" />
+
+        <Button
+            android:id="@+id/btn_academic"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_h2_today_acadmic"
+            android:gravity="center_vertical|center" />
+
+        <Button
+            android:id="@+id/btn_orgs"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_h2_today_orgs"
+            android:gravity="center_vertical|center" />
+
+        <Button
+            android:id="@+id/btn_preach"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_h2_today_preach"
+            android:gravity="center_vertical|center"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="480dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/rl_content"
+        android:background="@drawable/ic_headerview_yinying" />
+   
+    <ListView
+        android:id="@+id/lv_today_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_line"
+        android:listSelector="@color/gray" >
+    </ListView>
+
+</RelativeLayout>
